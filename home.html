@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav bar</title>
+    <link rel="stylesheet" href="addtocard.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet"  href="home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Arbutus Slab' rel='stylesheet'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- <script src="nav.js"></script> -->
+    <script src="https://kit.fontawesome.com/4d548a4e76.js" crossorigin="anonymous"></script>
+   
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm p-3 fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./bird.webp" alt="HK Logo" class="logo-img" style="width:90px;"> 
+          </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item ps-5">
+                  <a class="nav-link" href="./home.html">Home</a>
+                </li>
+                <li class="nav-item ps-5">
+                  <a class="nav-link" href="./Register.html"></a>
+                </li>
+                
+                <li class="nav-item ps-5">
+                    <a class="nav-link" href="./signup.html"></a>
+                  </li>
+                <li class="nav-item ps-5">
+                    <a class="nav-link" href="./login.html"></a>
+                  </li>
+                </li>
+                
+              </ul>
+              <div class="d-flex ms-auto nav-item search-form">
+                <div class="search-wrapper">
+                  <input class="form-control me-2 p-1 ps-2" type="text" placeholder="Search">
+                  <button type="submit" class="search-button">
+                    <i class="fa fa-search"></i>
+                  </button>
+                </div>
+            </div>
+              
+            <div class="dropdown nav-item">
+                <button type="button" class="btn dropdown-toggle border-0" data-bs-toggle="dropdown">
+                    <i class="fa-regular fa-user border border-3 border-dark rounded-circle"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-center">
+                  <li><a class="dropdown-item" href="./Register.html">Register</a></li>
+                  <li><a  id="sign-up1" class="dropdown-item" href="./signup.html">Sign up</a></li>
+                  
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a  id="sign-up" class="dropdown-item" href="./login.html">Login in</a></li>
+                 
+
+                </ul>
+              </div>
+            </div>
+          </div>
+    </nav>
+<div class="mainBody" style="display: flex;justify-content: space-between;">
+</div>
+</div>
+<br>
+<br>
+
+<br>
+
+<br>
+
+<br>
+
+
+
+<div class="header">
+  <div class="cart"><p id="count">0</p>
+
+  </div>
+</div>
+
+<div class="container">
+  <div id="root"></div>
+  <div class="slidebar">
+      <div class="head"><p>My Cart</p></div>
+      <div id="cartItem">your cart is empty</div>
+      <div class="foot">
+          <h3>Total</h3>
+          <h2 id="total">$ 0.00</h2>
+      </div>
+  </div>
+
+<!-- carollsy -->
+
+
+
+
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+      <script type="module" src="home.js"></script>
+      <script src="addtocard.js"></script>
+</body>
+</html>
